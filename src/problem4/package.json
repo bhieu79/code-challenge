@@ -1,0 +1,21 @@
+{
+  "name": "problem4-sum-to-n",
+  "version": "1.0.0",
+  "description": "Three ways to calculate sum from 1 to n",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "ts-node test_sum_to_n.ts",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["sum", "algorithms", "typescript", "math"],
+  "author": "",
+  "license": "MIT"
+}

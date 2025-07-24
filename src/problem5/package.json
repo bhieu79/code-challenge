@@ -1,0 +1,45 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "A super simple CRUD API with organized structure",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/server.js",
+    "dev": "tsx src/server.ts",
+    "dev:watch": "tsx watch src/server.ts",
+    "test": "npm run build && mocha dist/test/api.test.js --timeout 5000",
+    "test:dev": "tsx test/api.test.ts --timeout 5000",
+    "test:watch": "tsx watch test/api.test.ts --timeout 5000"
+  },
+  "keywords": [
+    "express",
+    "crud",
+    "api",
+    "simple",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/chai-http": "^4.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.17",
+    "@types/sqlite3": "^3.1.11",
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^11.7.1",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
